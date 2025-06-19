@@ -1,0 +1,87 @@
+@import '../styles/colors.css';
+
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.poll-badge {
+  background: var(--primary-3);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  margin-top: 24px;
+  font-size: 1rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.main-title span {
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.role-cards {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.role-card {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 32px 40px;
+  min-width: 260px;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+.role-card.selected {
+  border: 2px solid var(--primary-1);
+  box-shadow: 0 4px 16px rgba(119,101,218,0.08);
+}
+.role-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+.role-card p {
+  color: var(--gray);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.continue-btn {
+  background: linear-gradient(90deg, var(--primary-1), var(--primary-2));
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 56px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+.continue-btn:hover {
+  background: linear-gradient(90deg, var(--primary-2), var(--primary-1));
+} 

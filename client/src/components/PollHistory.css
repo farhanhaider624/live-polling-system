@@ -1,0 +1,113 @@
+@import '../styles/colors.css';
+
+.poll-history-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poll-history-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(119,101,218,0.18);
+  width: 90vw;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 32px 24px 24px 24px;
+  position: relative;
+}
+.poll-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-3);
+  margin-bottom: 18px;
+}
+.close-btn {
+  background: none;
+  color: var(--primary-3);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.loading, .no-history {
+  text-align: center;
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin: 32px 0;
+}
+.poll-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.poll-history-item {
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 18px 18px 12px 18px;
+  box-shadow: 0 1px 4px rgba(119,101,218,0.06);
+}
+.poll-history-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+.poll-history-results {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.result-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 1.05rem;
+  color: var(--dark);
+}
+.option-number {
+  background: var(--primary-1);
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.result-option {
+  flex: 1;
+  margin-left: 8px;
+}
+.result-bar-bg {
+  flex: 2;
+  background: #e0e0e0;
+  border-radius: 8px;
+  height: 14px;
+  margin: 0 8px;
+  overflow: hidden;
+}
+.result-bar {
+  background: linear-gradient(90deg, var(--primary-1), var(--primary-2));
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.5s;
+}
+.result-percent {
+  min-width: 36px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--primary-3);
+} 
